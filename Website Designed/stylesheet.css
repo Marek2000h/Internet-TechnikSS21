@@ -16,7 +16,7 @@ body {
   font-family:"Avenir Netxt",Arial,sans-serif;
   color: white;
   background-color: #E8DCCA;
-  font-size: 35px;
+  font-size: 30px;
 }
 
   a:link{color:white;}
@@ -27,7 +27,7 @@ body {
 .nav {
   background: #A4957D;
   height:60px;
-  widht:100%;
+  width:100%;
 }
 .header {
   color: #A4957D;
@@ -64,4 +64,33 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
 
+}
+@media (min-width:1024px){
+  .container-container{
+    display:flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width:768px) and (max-width:1024px){
+  body{
+    font-size:35px;
+    overflow:scroll;
+    overflow-y:hidden;
+  }
+  h1{
+    font-size:2rem:
+  }
+  .flex-container{
+    display:flex;
+    flex-direction:row;
+  }
+}
+
+.content-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+img{
+  width:35%;
+  height:auto;
 }
