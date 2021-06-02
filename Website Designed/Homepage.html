@@ -1,9 +1,10 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="widht=device-widht,initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <title>Marek Hoffmann</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <script src="javascript.js"></script>
 </head>
 <body>
   <section>
@@ -14,26 +15,33 @@
     </div>
   </section>
   <section>
-    <div class ="nav">
-      <div class="container">
+    <header class="nav-bar">
+      <div class="logo">
+        <strong> Navigation</strong>
+      </div>
+    <button id="menu">
+      <img id="hamburger" src="baseline_reorder_black_24dp.png" class="active" />
+      <img id="close" src="baseline_minimize_black_24dp.png"/>
+    </button>
+    <nav>
         <ul>
           <li><a href="Homepage.html">Home</a></li>
           <li><a href="Website2.html">Outfits</a></li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   </section>
   <section>
     <p>Hallo und herzlich Willkommen auf meiner Seite<br>
     Mein Name ist Marek, ich bin 20 Jahre alt und interessiere mich für Mode. Hier ein Bild von mir:</p>
-<div class = "container">
-  <div class ="flex-container">
-    <div class = "flex-item">
-      <img class = "links" src="Bilder/IMG_3052 2.JPG" width:"200px"/>
-    </div>
-        <h2><p class ="header"</p>Fakten zu meiner Person</h2>
-        </div>
-    </div>
+    <img src="Bilder/IMG_3052 2.JPG" height="400px" onmouseover="this.src='Bilder/IMG_2325.jpg'" onmouseout="this.src='Bilder/IMG_3052 2.JPG'">
+    <!-- Die Aufgabe mit dem Bild ändern habe ich so gelöst da, ich mit JavaScript leider etwas überfordert war...
+    Für die Navigationsleiste habe ich den Code ihrer Beispielwebsite aus der Vorlesung als Vorlage genommen,
+    da ich es ohne sie wahrscheinlich nicht geschafft hätte. Indem ich die Vorlage an meine Website angepasst habe,
+    hab ich die Funktionsweise der einzelnen Bestandteile aber bessere verstanden und konnte ihren Code so relativ gut nachvollziehen.
+    Jedoch fällt es mir schwer, ohne eine solche Hilfe Aufgaben mit JavaScript von Grund auf zu lösen, da ich viele Dinge
+    oft noch nicht ausreichend verstehe, um mir selber einen kompletten Lösungsweg zu erarbeiten :)-->
+    <h2><p class ="header"</p>Fakten zu meiner Person</h2>
       <div class="container">
         <div class="flex-container">
           <div class="flex-item">
